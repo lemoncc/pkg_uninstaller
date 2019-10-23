@@ -11,10 +11,12 @@ Installation is as simple as:
 Adding to PATH, for system installation (with sudo):
 
     echo 'PATH=$PATH:/opt/pkg_uninstaller' >> /etc/profile
+    source /etc/profile
     
 Adding PATH when installed as user (without sudo):
 
     echo 'PATH=$PATH:$HOME/.pkg_uninstaller' >> $HOME/.bash_profile
+    source $HOME/.bash_profile
 
 Note the single quotes are important in both cases.
 
